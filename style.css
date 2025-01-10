@@ -1,0 +1,764 @@
+@font-face{
+  font-family: IBM Plex Mono;
+  src: url(./GT-America-Compressed-Bold\ \(1\).woff2);
+}
+*{
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+       }
+       html,body{
+         width: 100%;
+         height: 100%;
+         /* overflow-x: hidden; */
+         font-family: gilroy;
+       }
+       #nav{
+          position: fixed;
+          width: 100%;
+          height: 10%;
+          background: transparent;
+          z-index: 150;
+          font-family: IBM Plex Mono;
+       
+       }
+       #nav2   {
+          padding: 4px 0;
+         gap: 40px;
+         width: 50%;
+         margin-left: 20%;
+       }
+       #nav3 i {
+         font-size: 32px;
+         
+         }
+       #main{
+    position: relative;
+         width: 100%;
+         height: 100vh;
+         background: rgb(8,2,22);
+       }
+       #page1{
+         position: relative;
+         width: 100%;
+         height: 100vh;
+         background: linear-gradient(#b7a5fc,#dcd4fb);
+         z-index: 10;
+
+        
+       
+       }
+       #c1{
+         position: absolute;
+         z-index: 20;
+         left: -10%;
+       }
+       #c2{
+         position: absolute;
+         z-index: 20;
+         right:  -10%;
+       }
+       #mountains{
+         position: absolute;
+         bottom: 0;
+       }
+       .castle1{
+         position: absolute;
+         width: 30%;
+         bottom: 0;
+         z-index: 25;
+         /* height: 10%; */
+         left: -2%;
+       }
+       .castle2{
+         position: absolute;
+         width: 22%;
+         bottom: 0;
+         z-index: 25;
+         /* height: 10%; */
+         right:  -2%;
+       }
+       #page1 a{
+         position: absolute;
+         z-index: 100;
+       }
+       .tag{
+        position: absolute;
+        top: 19%;
+        right: -2%;
+        border: 1px solid #37373878;
+        padding: 20px 50px;
+        z-index: 200;
+        border-radius: 100px;
+        color: #44434343;
+       }
+       .tag-elemnts h1{
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 29px;
+        transition: ease-in-out;
+       }
+       .tag:hover{
+       color: #000;
+       
+
+       }
+       .tag-elemnts i{
+       font-size: 25px;
+       margin-left: -15px;
+       }
+       .circle1 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #232360;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Ensures the image is perfectly centered */
+        transition: transform 0.3s ease; /* Adds smooth scaling transition */
+      }
+      
+      .circle1 img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%; /* Matches the parent dimensions */
+        height: 100%; /* Matches the parent dimensions */
+        border-radius: 50%;
+        transition: transform 0.3s ease; /* Adds smooth scaling transition */
+      }
+      
+      .circle1:hover img {
+        transform: scale(2); /* Scales the image when hovered */
+      }
+      
+       #pbh1{
+         position: absolute;
+         left: 31%;
+         top: 30%;
+         font-size: 75px;
+         font-weight: 700;
+         letter-spacing: .8px;
+         line-height: 70px;
+         text-align: center;
+            color: rgb(49,23,114);
+         z-index: 100;
+       }
+       #page1 p{
+         position: absolute;
+         left: 31%;
+         top: 50%;
+         font-size: 21px;
+         font-weight: 500;
+         letter-spacing: .8px;
+         text-align: center;
+          color: rgb(0, 0, 0);
+         z-index: 100;
+       }
+       
+       #wave1{
+         position: absolute;
+         bottom: -67%;
+         margin-left: -50px;
+         scale: 1.4;
+         transform: rotate(180deg);
+         width: 100%;z-index: -1;
+       
+       }
+       .p1b{
+         position: absolute;
+         width: 100%;
+         height: 30vh;
+         background-color: rgb(34,25,54);
+         bottom: -30%;
+         color: #fff;
+         font-family: IBM Plex Mono;
+       }
+  #pbh2{
+         position: absolute;
+         left: 40%;
+         top: 17%;
+         font-family: IBM Plex Mono;
+         color: #fff;
+         font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 2px;
+         bottom: -30%;
+       }
+.p1b2{
+          
+      position: absolute;
+      left: 49%;
+      top: 58%;
+      z-index: 100;
+      color: black;
+      /* border: 2px solid linear-gredient(pink, purple);  */
+      border-radius: 0.375rem;
+      font-weight: 500;
+      font-family: IBM Plex Mono;
+      padding: 0.75rem 2.5rem; /* py-3 px-10 in Tailwind */
+      background: linear-gradient(pink, rgba(130, 73, 187, 0.347)); /* Gradient background for border */
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) padding-box, 
+    linear-gradient(#fff 0 0); /* Prevent background from affecting text */
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  mask-image: none; 
+
+  
+    
+}
+.p1box{
+          display: flex;
+          width: 70%;
+          height: 40%;
+          margin-top: 07%;
+          margin-left: auto;
+          margin-right: auto;top: 20%;
+          background-color: #ffffff2a;
+}
+.p1box{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 60px;
+          width: 70%;
+          height: 40%;
+          margin-top: 07%;
+          margin-left: auto;
+          margin-right: auto;top: 20%;
+          background-color: #ffffff2a;
+          border-radius: 10px;
+          border: 1px solid #a39e9e;
+}
+.p1box h2{ 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          font-size: 25px;
+}
+#page2{
+   position: relative;
+   margin: 0%;
+   top: 0%;
+   left: 0%;
+   width: 100%;
+   height: 100vh;
+   background: rgb(8,2,22);
+}
+#page2>h1{ 
+          position: absolute;
+          width: 100%;
+          left: 0;
+          top: 10%;
+          font-size: 55px;
+          font-weight: 700;
+          letter-spacing: .8px;
+          line-height: 55px;
+          text-align: center;
+          color: rgb(244, 241, 249);
+}
+#page2>p{ 
+          position: absolute;
+          width: 100%;
+          left: 0;
+          top: 32%;
+          font-size: 15px;
+          font-weight: 300;
+          letter-spacing: .8px;
+          text-align: center;
+          
+}
+
+#dragon{
+  position: absolute;
+  bottom: 0;
+  left: 32%;
+  width: 500px;z-index: 10;
+}
+#pattern{
+  position: absolute;
+  bottom: 15%;
+  left: 32%;
+  width: 550px;
+}
+#page2>h2{
+  position: absolute;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  left: 5%;
+  top: 40%;
+}
+#page2>h3{
+  position: absolute;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  right:  5%;
+  top: 40%;
+}
+.element1 ,.element2{
+  /* position: absolute; */
+  display: flex;
+gap: 40px;
+  flex-direction: column;
+  padding-right: 50px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  right:  5%;
+  top: 45%;
+  font-family: IBM Plex Mono;
+}
+.element1>button ,.element2>button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px; 
+  border: 1.5;
+  padding: 8px 12px;
+  text-align: center;
+  /* border: 1px solid pink; */
+  border-radius: 50px;
+
+
+
+}
+
+#page3{
+   position: relative;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(rgb(8,2,22),#232360,rgb(8,2,22));
+
+}
+#p3bh1{
+  position: absolute;
+  left: 23%;
+  top: 20%;
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 70px;
+  text-align: center;
+     color: rgb(255, 255, 255);
+  z-index: 100;
+}
+#page3 p{
+  position: absolute;
+  left: 26%;
+  top: 41%;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: .8px;
+  text-align: center;
+   color: rgb(183, 180, 180);
+  z-index: 100;
+}
+.logo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Responsive columns */
+  gap: 15px; /* Space between logos */
+  padding: 20px;
+  /* background-color: #f9f9f9; */
+  justify-items: center; /* Center align items horizontally */
+  align-items: center; /* Center align items vertically */
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+  padding-top: 40%;
+  margin-left: 18%;
+}
+
+.logo {
+  object-fit: cover;
+  object-position: center;
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+#page4  {
+   position: relative;
+  top: 0%;
+  width: 100%;
+  height: 90vh;
+  background:#080216;
+}
+
+#box1{
+  width: 20%;
+  background: #080216;
+}
+
+#box1 h1{
+    
+font-size: 37px;
+font-weight: 600;
+color: #fff;
+}
+#box1 p{  
+  padding-bottom: 50px;
+font-size: 17px;
+font-weight: 500;
+color: #bcb5b5;
+
+width: 90%;
+}
+.p4b2{
+  position: absolute;
+border:1px solid #fff ;
+  color: black;
+  /* border: 2px solid linear-gredient(pink, purple);  */
+  border-radius: 0.375rem;
+  font-weight: 500;
+  padding: 0.75rem 2.5rem; /* py-3 px-10 in Tailwind */
+  background: linear-gradient(pink, rgba(130, 73, 187, 0.347)); /* Gradient background for border */
+-webkit-mask: 
+
+
+linear-gradient(#fff 0 0) padding-box, 
+linear-gradient(#fff 0 0); /* Prevent background from affecting text */
+-webkit-mask-composite: destination-out;
+mask-composite: fe;
+font-family: IBM Plex Mono;
+mask-image: none; 
+
+}
+
+
+#page5  {
+  position: relative;
+ top: 0%;
+ padding-top: 40px;
+ width: 100%;
+ height: 100vh;
+ background:#080216;
+}
+
+#page5 h1 ,#page6 h1 ,#page7 h1,#page8 h1,#page9 h1{
+color: #fff;font-size: 39px;
+font-weight: 700;
+  
+}
+
+#page5 h3 , #page6 h3, #page7 h3,#page8 h3,#page9 h3{
+  color: #fff;font-size: 24px;
+  font-weight: 600;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+#page5 p, #page6 p, #page7 p, #page8 p, #page9 p{
+  color: #9f9c9c;font-size: 19px;
+  font-weight:500;
+  padding-top: 8px;
+}
+
+#page5 p::before,#page6 p::before,#page7 p::before,#page8 p::before{
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDMyIDMyIj48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxNS41IiBmaWxsPSIjRjk2M0JDIiBzdHJva2U9IiNGOTYzQkMiIG9wYWNpdHk9Ii4wNSIvPjxwYXRoIHN0cm9rZT0iI0Y5NjNCQyIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJtOSAxNi41IDUuMzc1IDUuNUwyNSAxMSIvPjwvc3ZnPg==);
+  content: "";
+  height: 32px;
+  left: -39px;
+  position: absolute;
+  width: 32px;
+}
+.b1 {
+  width: 130px;
+  height: 50px;
+  color: #fff;
+  border-radius: 5px;
+  background: linear-gradient(to right, #e763c1, #242c76); /* Smooth gradient on the X-axis */
+  border: 1px solid transparent; /* Optional border, can set a specific color */
+  font-weight: 600; /* Makes text bold */
+  display: flex; /* Ensures content alignment if needed */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: center; /* Centers text */
+  cursor: pointer; /* Changes cursor to pointer for better UX on buttons */
+  transition: all 0.3s ease; /* Smooth transition effect for hover or focus */
+  transition: transform .2s linear;
+}
+
+/* Optional hover effect */
+.b1:hover {
+  background: linear-gradient(to right, #242c76, #e763c1); /* Reverse gradient on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+  transition: transform .2s linear;
+  font-family: IBM Plex Mono;
+}
+.b2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 45px;
+  font-family: IBM Plex Mono;
+
+  background-color:#080216;
+  border-radius: 5px;
+}
+.terminal{
+  position: absolute;
+  border-radius: 5px;
+  right: 8%;
+  top: 07%;
+  width: 390px;
+  height: 550px;color: #fff;
+  
+  background-color: #150f22 ;
+}
+.terminal2{
+  position: absolute;
+  border-radius: 5px;
+  left: 8%;
+  top: 07%;
+  width: 390px;
+  height: 550px;color: #fff;
+  
+  background-color: #150f22 ;
+}
+.terminal-head{
+  align-items: center;
+  background-color: hsla(0, 0%, 100%, .05);
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  padding: 0 16px;
+  position: relative;
+  text-align: center;
+}
+.ab-terminal-title{  color: #fff;
+font-family: IBM Plex Mono, Arial, sans-serif;
+font-size: 14.1827px;
+font-style: normal;
+font-weight: 400;
+left: 0;
+line-height: 150%;
+opacity: .75;
+position: absolute;
+right: 0;
+text-align: center;
+}
+.terminal-header-circles {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  height: 100%;
+}
+.terminal-header-circles span {
+  border: 1px solid hsla(0, 0%, 100%, .15);
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}.terminal-circle-clear {
+  background: hsla(0, 0%, 100%, .05);
+  border: 1px solid hsla(0, 0%, 100%, .15);
+  border-radius: 50%;
+  display: flex;
+  height: 12px;
+  width: 12px;
+}
+.terminal-circle-clear span {
+  border: 1px solid hsla(0, 0%, 100%, .15);
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+.pre.prism-code {
+  word-wrap: break-word;
+  background: transparent !important;
+  background-color: transparent !important;
+  padding: 20px 24px;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  color: #fff;
+  white-space: -o-pre-wrap;
+}
+#page6  {
+  position: relative;
+ top: 0%;
+ width: 100%;
+ height: 100vh;
+ background:#080216;
+}
+#page7  {
+  position: relative;
+ top: 0%;
+ width: 100%;
+ height: 100vh;
+ background:#080216;
+}
+#page8  {
+  position: relative;
+ top: 0%;
+ width: 100%;
+ height: 100vh;
+ background:#080216;
+}
+#page9  {
+  position: relative;
+ top: 0%;
+ width: 100%;
+ height: 100vh;
+ background:#080216;
+ overflow: hidden;
+}
+#page9 h2 {
+  position: absolute;
+  /* left: 31%; */
+  font-size: 75px;
+
+  font-weight: 700;
+  letter-spacing: .5px;
+  line-height: 70px;
+  text-align: center;
+     color: rgb(236, 236, 236);
+  width: 100%;
+}
+#box1 {
+  width: 350px;
+  height: 350px;
+  background: #000;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#box1::after {
+  position: absolute; /* Positioning relative to #box1 */
+  top: 89%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  font-weight: 300;
+  transform: translate(-50%, -50%); /* Align the center point */
+  color: #0808088d; /* Text color */
+  font-size: 24px; /* Adjust font size */
+  font-weight:500 ; /* Make the text bold */
+  text-align: center; /* Center align the text */
+  pointer-events: none; /* Ensure it doesn't interfere with interactions */
+}
+#box1 img {
+  width: 100%; /* Ensure the image fits within the container */
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 5s ease-in; /* Smooth transition effect for scaling */
+}
+
+#box1 img:hover {
+  transform: scale(2); /* Use `transform` for scaling */
+}
+  /* Footer Styles */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  background-color: #080216;
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer h3 {
+  color: #fcbf49;
+  margin-bottom: 15px;
+}
+
+.footer .column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer p {
+  line-height: 1.6;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin: 8px 0;
+}
+
+.footer ul li a {
+  color: #fcbf49;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+  color: #fff;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.footer .social-icons a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer .contact p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.footer .contact p i {
+  font-size: 20px;
+}
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-icon img {
+  width: 35px;
+  height: 35px;
+}
